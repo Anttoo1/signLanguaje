@@ -2,4 +2,6 @@
 # by rootatkali
 
 
+import os
 
+os.system('pyinstaller gui.py --onefile -w')
