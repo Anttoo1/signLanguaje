@@ -20,8 +20,10 @@ def inferenceClasFunct():
 
     labels_dict = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'G'}
     while True:
-
+        
         ret, frame = cap.read()
+
+        cv2.putText(frame, 'Press "Q" to exit', (100, 50), cv2.FONT_HERSHEY_SIMPLEX, 1.3, (214, 207, 203), 3,cv2.LINE_AA)
 
         H, W, _ = frame.shape
 
